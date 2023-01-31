@@ -23,7 +23,7 @@ $_SESSION['length'] = $_POST['length'];
     <div>
         <?php
         if (isset($_SESSION['length']) && $_SESSION['length'] != '') {
-            echo password_generate($_SESSION['length']);
+            echo 'La password da te generata è: ' . password_generate($_SESSION['length']);
         }
         ?>
     </div>
