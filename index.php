@@ -1,9 +1,3 @@
-<?php
-
-include __DIR__ . '/functions.php';
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,14 +9,9 @@ include __DIR__ . '/functions.php';
 </head>
 
 <body>
-    <form action="./index.php" method="POST">
+    <form action="./result.php" method="POST">
         <input type="text" name="length" id="pass" placeholder="inserisci lunghezza password">
         <button>INVIA</button>
-        <?php
-        if (isset($_POST['length']) && $_POST['length'] != '') {
-            echo password_generate($length);
-        }
-        ?>
     </form>
 </body>
 
